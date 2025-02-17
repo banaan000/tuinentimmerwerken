@@ -23,18 +23,24 @@
                     <img src="./images/logo_v1.jpg" alt="KG Tuin- & Houtwerken Logo" class="logo">
                 </a>
             </div>            
-            <nav class="nav-container">
+            
+            <button class="hamburger-menu" id="hamburger">
+                ☰
+            </button>
+    
+            <nav class="nav-container" id="nav-menu">
                 <ul>
-                    <li><a href="index.html" class="selected">HOME</a></li>
-                    <li><a href="aanleg.html">AANLEG</a></li>
-                    <li><a href="houtbouw.html">HOUTBOUW</a></li>
-                    <li><a href="onderhoud.html">ONDERHOUD</a></li>
-                    <li><a href="voorbeelden.html">VOORBEELDEN</a></li>
-                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="index.html" class="selected">Home</a></li>
+                    <li><a href="aanleg.html">Aanleg</a></li>
+                    <li><a href="houtbouw.html">Houtbouw</a></li>
+                    <li><a href="onderhoud.html">Onderhoud</a></li>
+                    <li><a href="voorbeelden.html">Voorbeelden</a></li>
+                    <li><a href="tel:0612345678" class="phone-link">06 12 34 56 78</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+    
     <main>
         
         <!-- Image Carousel Section -->
@@ -45,7 +51,7 @@
                         <img src="images/carousel/carousel1.jpeg" alt="Aanleg">
                         <div class="carousel-overlay"></div>
                         <div class="carousel-caption">
-                            <h3>AANLEG</h3>
+                            <h3>Aanleg</h3>
                             <p>Wij brengen uw tuin tot leven</p>
                             <a href="aanleg.html" class="btn">Bekijk voorbeelden</a>
                         </div>
@@ -54,7 +60,7 @@
                         <img src="images/carousel/carousel2.png" alt="Houtbouw">
                         <div class="carousel-overlay"></div>
                         <div class="carousel-caption">
-                            <h3>HOUTBOUW</h3>
+                            <h3>Houtbouw</h3>
                             <p>Op maat gemaakte houten constructies</p>
                             <a href="houtbouw.html" class="btn">Bekijk voorbeelden</a>
                         </div>
@@ -63,7 +69,7 @@
                         <img src="images/carousel/carousel3.jpeg" alt="Onderhoud">
                         <div class="carousel-overlay"></div>
                         <div class="carousel-caption">
-                            <h3>ONDERHOUD</h3>
+                            <h3>Onderhoud</h3>
                             <p>Uw tuin, onze zorg</p>
                             <a href="onderhoud.html" class="btn">Bekijk voorbeelden</a>
                         </div>
@@ -76,22 +82,23 @@
 
         <div class="white-section">
             <div class="white-content">
-                <h1>Al meer dan 15 jaar ontwerpen wij tuinen, leggen we tuinen aan en onderhouden we tuinen. Zowel voor particulier als bedrijf.</h1>
-                <p class="subtitle">
-                    Wij doen alles wat u maar kunt bedenken voor in de tuin. Zowel het maken van een 
-                    <span class="highlight">inzichtelijk ontwerp</span> tot het <span class="highlight">praktische onderhoud</span> van uw tuin.
+                <h2>Passie voor creativiteit en vakmanschap</h2>
+                <p>
+                    Elk project begint met een <span class="highlight">inzichtelijk ontwerp</span> en eindigt met een doordachte uitvoering.  
+                    Wij combineren ervaring met innovatie om ideeën tot leven te brengen, met oog voor detail en een <span class="highlight">praktische aanpak</span>.
                 </p>
                 <div class="underline"></div>
-                <button class="btn">ONZE DIENSTEN</button>
+                <a href="onderhoud.html" class="btn">Ontdek ons verhaal</a>
             </div>
         </div>
+        
 
         <div class="examples-section">
-            <h2>VOORBEELDEN</h2>
+            <h2>Voorbeelden</h2>
             <div class="underline"></div>
-            <p class="description">
-                Bekijk enkele voorbeelden van werk dat wij hebben opgeleverd.<br>
-                Geïnteresseerd of heeft u een idee dat er niet tussen staat, neem dan <span class="highlight">contact</span> met ons op.
+            <p>
+                Bekijk onze eerder opgeleverde projecten.<br>
+                Wilt u informatie? Neem dan <span class="highlight">contact</span> met ons op.
             </p>
         
             <div class="examples-grid">
@@ -115,12 +122,14 @@
                 </div>
             </div>
         </div>
-        
+
         <section class="project-examples">
             <div class="project-header">
                 <h2>Dakterras</h2>
                 <div class="underline"></div>
-                <p>Bekijk enkele projecten die wij hebben gerealiseerd. Heeft u een specifiek idee? Neem gerust <a href="contact.html">contact</a> op.</p>
+                <p>
+                    Bekijk enkele projecten die wij hebben gerealiseerd. Heeft u een specifiek idee? Neem gerust <span class="highlight">contact</span> op.
+                </p>
                 <br>
             </div>
             <div class="project-gallery">
@@ -164,9 +173,9 @@
         </section>
 
         <section class="services-section">
-            <h2>DIENSTEN </h2>
-            <div class="services-line"></div>
-            <p>
+            <h2>Diensten </h2>
+            <div class="underline"></div>
+            <p class="description">
                 Wij zijn breed inzetbaar als het gaat om wensen omtrent straatwerk.<br>
                 Hier onder vindt u een overzicht van diensten die wij regelmatig leveren.
             </p>
@@ -184,10 +193,6 @@
         <footer class="footer">
             <div class="footer-container">
                 <p>&copy; 2025 KG Tuin- & Houtwerken. Alle rechten voorbehouden.</p>
-                <nav class="footer-nav">
-                    <a href="index.html">Home</a>
-                    <a href="contact.html">Contact</a>
-                </nav>
             </div>
         </footer>
         
