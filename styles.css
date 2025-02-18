@@ -1,3 +1,9 @@
+
+/* 123524 */
+/* 3E7B27 */
+/* 85A947 */
+/* EFE3C2 beige */ 
+
 /* Algemene stijlen */
 html, body {
     height: 100%;
@@ -12,8 +18,8 @@ html, body {
 
 /* Typografie */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'UglyQua', serif;
-    color: #3a3a3a;
+    font-family: 'Open Sans', serif;
+    color: #123524;
 }
 
 h2 a {
@@ -30,6 +36,7 @@ header {
     background: #ffffff;
     color: white;
     padding: 15px 0;
+    font-family: 'Open Sans', serif;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -64,7 +71,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(0, 0, 0);
+    color: #123524;
     text-decoration: none;
     padding: 12px 25px;
     border-radius: 8px;
@@ -89,14 +96,15 @@ nav ul li a {
 @media (max-width: 768px) {
     .hamburger-menu {
         display: block;
-        font-size: 30px;
+        font-size: 32px;
         background: none;
         border: none;
         cursor: pointer;
         position: absolute;
-        top: 15px;
-        right: 20px;
+        top: 20px;
+        right: 25px;
         z-index: 1100;
+        color: #333;
     }
 
     .nav-container {
@@ -106,12 +114,13 @@ nav ul li a {
         left: 0;
         width: 100%;
         height: 100vh;
-        background: rgba(255, 255, 255, 0.95); /* Slight transparency */
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        background: rgba(0, 0, 0, 0.75); /* Dark background with transparency */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
         text-align: center;
         z-index: 1000;
-        padding-top: 80px;
-        backdrop-filter: blur(8px); /* Adds subtle blur effect */
+        padding-top: 100px;
+        backdrop-filter: blur(10px); /* More pronounced blur effect */
+        animation: slideIn 0.4s ease-in-out; /* Slide-in animation */
     }
 
     .nav-container ul {
@@ -120,7 +129,8 @@ nav ul li a {
         margin: 0;
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 20px;
+        animation: fadeIn 0.5s ease-in-out;
     }
 
     .nav-container ul li {
@@ -130,21 +140,20 @@ nav ul li a {
 
     .nav-container ul li a {
         display: block;
-        font-size: 18px;
-        font-weight: 500;
-        color: black;
-        padding: 10px 15px;
-        border-radius: 8px;
-        background: #d4e3c6;
+        font-size: 26px;
+        font-weight: 600;
+        color: white;
+        padding: 15px 25px;
+        border-radius: 12px;
+        background: linear-gradient(45deg, #FF6347, #FF9E2A); /* Gradient background */
         transition: all 0.3s ease-in-out;
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     .nav-container ul li a:hover {
-        background: #b8d1a2;
-        transform: translateY(-2px);
+        background: #FFD700; /* Gold on hover */
+        transform: translateY(-4px);
     }
-
 
     .nav-container.active {
         display: flex;
@@ -152,7 +161,28 @@ nav ul li a {
         align-items: center;
         justify-content: flex-start;
     }
+
+    /* Slide-in animation */
+    @keyframes slideIn {
+        from {
+            transform: translateX(100%);
+        }
+        to {
+            transform: translateX(0);
+        }
+    }
+
+    /* Fade-in animation for links */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
 }
+
 
 
 
@@ -173,8 +203,8 @@ nav ul li a {
 
 /* Hover-effect */
 nav ul li a:hover, nav ul li a.selected, .phone-link:hover {
-    background: #c4dfbd;
-    transform: scale(1.00);
+    background: #85A947;
+    transform: scale(1.04);
 }
 
 /* Mobiele optimalisatie */
@@ -230,7 +260,6 @@ main {
 .white-content h2 {
 
     font-size: 24px;
-    color: #3a3a3a;
     margin-bottom: 10px;
 
 }
@@ -379,7 +408,7 @@ footer {
 .carousel-caption h3 {
     font-size: 42px;
     margin: 0;
-    color: #d4ebd0;
+    color: #EFE3C2;
 }
 
 .carousel-caption p {
@@ -387,19 +416,20 @@ footer {
 }
 
 .btn {
-    background: rgb(0, 0, 0);
+    background: #123524;
     color: white;
     padding: 10px 20px;
     border-radius: 20px;
     text-decoration: none;
     font-size: 18;
+    font-family: 'Inter', sans-serif;
     display: inline-block;
     margin-top: 10px;
 }
 
 .btn:hover {
     background: #ffffff;
-    color: black; /* Zorg ervoor dat de tekstkleur overeenkomt */
+    color: #123524; /* Zorg ervoor dat de tekstkleur overeenkomt */
     transition: background 0.8s ease-in-out;
 }
 
