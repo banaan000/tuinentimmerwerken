@@ -657,7 +657,7 @@ footer {
 
       .logo-container {
         position: absolute;
-        left: 20px; /* Of een andere waarde voor de gewenste uitlijning */
+        left: 20px; 
       }
 
     .logo {
@@ -682,5 +682,4 @@ footer {
         gap: 10px;
     }
 }
-
 
