@@ -660,22 +660,5 @@ footer {
         left: 20px; 
       }
 
-
-
-    .hamburger-menu {
-        flex: 0 0 25%;  /* Take up 25% of the space */
-        display: flex;
-        align-items: center;  /* Align hamburger vertically */
-        justify-content: center;  /* Center hamburger horizontally */
-        font-size: 1.8rem; /* Adjust size as needed */
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
 
