@@ -52,7 +52,7 @@ header {
 
 .logo {
     height: 100px;
-    width: flex;
+    width: auto;
 }
 
 nav ul {
