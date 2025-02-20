@@ -649,18 +649,16 @@ footer {
 
     .header-content {
         display: flex;
-        align-items: center;  /* Align items vertically */
-        justify-content: space-between;
-        width: 100%;
-        height: 100px;  /* Adjust this height if needed to match your desired header height */
-    }
-
-    .logo-container {
-        flex: 0 0 75%;  /* Take up 75% of the space */
-        display: flex;
         align-items: center;
-        justify-content: flex-start;  /* Align logo to the left */
-    }
+        justify-content: center; /* Centreert alle items horizontaal */
+        position: relative;
+        height: 100px; /* Of de gewenste hoogte */
+      }
+
+      .logo-container {
+        position: absolute;
+        left: 20px; /* Of een andere waarde voor de gewenste uitlijning */
+      }
 
     .logo {
         width: 100%; /* Ensure it doesn’t exceed container width */
