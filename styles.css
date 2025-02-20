@@ -33,9 +33,9 @@ h2 a:hover {
 
 /* Header */
 header {
-    background: #ffffff;
+    background: #123524;
     color: white;
-    padding: 15px 0;
+    padding: 10px 0;
     font-family: 'Open Sans', serif;
     text-align: center;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -51,7 +51,7 @@ header {
 }
 
 .logo {
-    height: 80px;
+    height: 100px;
     width: flex;
 }
 
@@ -72,7 +72,7 @@ nav ul li {
 
 /* Remove the background color */
 nav ul li a {
-    color: #123524;
+    color: #ffffff;
     text-decoration: none;
     padding: 4px 20px;
     border-radius: 8px;
@@ -112,7 +112,7 @@ nav ul li a.selected::after {
 /* Hide the hamburger menu on desktop */
 .hamburger-menu {
     display: none;
-    color: grey;
+    color: white;
     font-size: 30px;
     background: none;
     border: none;
@@ -131,7 +131,7 @@ nav ul li a.selected::after {
         top: 20px;
         right: 25px;
         z-index: 1100;
-        color: #333;
+        color: white;
     }
 
     .nav-container {
@@ -676,7 +676,7 @@ footer {
     .logo {
         width: 100%; /* Ensure it doesn’t exceed container width */
         max-width: 100%; /* Ensure it doesn’t overflow */
-        height: auto;
+        height: 100px;
     }
 
     .hamburger-menu {
