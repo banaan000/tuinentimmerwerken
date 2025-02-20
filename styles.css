@@ -660,11 +660,7 @@ footer {
         left: 20px; 
       }
 
-    .logo {
-        width: 100%; /* Ensure it doesn’t exceed container width */
-        max-width: 100%; /* Ensure it doesn’t overflow */
-        height: 100px;
-    }
+
 
     .hamburger-menu {
         flex: 0 0 25%;  /* Take up 25% of the space */
