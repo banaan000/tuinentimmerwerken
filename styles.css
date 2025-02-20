@@ -228,24 +228,6 @@ nav ul li a.selected::after {
     }
 }
 
-
-
-
-/* Telefoonknop */
-/* .phone-link {
-    padding: 14px 25px;
-    border-radius: 25px;
-    text-decoration: none;
-    color: rgb(29, 29, 29);
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    transition: all 0.3s ease-in-out;
-} */
-
-
 /* Mobiele optimalisatie */
 @media (max-width: 768px) {
     nav ul {
@@ -292,8 +274,15 @@ main {
 .white-section {
     text-align: center;
     padding: 50px 20px;
-    width: 50%;
+    width: 70%;
+    min-height: 300px;
     margin: 0 auto;
+    position: relative;
+    background-image: url('images/logos/logo1.png'); /* Replace with your actual logo URL */
+    background-size: 250px; /* Set the size to approximately 300px */
+    background-repeat: no-repeat;
+    background-position: bottom right; /* Align to bottom right */
+    padding: 50px; /* Ensure content doesn't overlap the logo too much */
 }
 
 .white-content h2 {
