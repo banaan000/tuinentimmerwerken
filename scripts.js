@@ -84,3 +84,29 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+document.addEventListener("DOMContentLoaded", function () {
+    // Fade-in effect on scroll
+    const fadeElements = document.querySelectorAll(".fade-in");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+            }
+        });
+    }, { threshold: 0.2 });
+
+    fadeElements.forEach(el => observer.observe(el));
+
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            window.scrollTo({
+                top: target.offsetTop - 80,
+                behavior: "smooth"
+            });
+        });
+    });
+});
