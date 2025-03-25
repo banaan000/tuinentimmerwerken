@@ -110,3 +110,24 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".decode");
+
+    elements.forEach(el => {
+      const encoded = el.dataset.plain;
+      try {
+        const decoded = decodeURIComponent(escape(atob(encoded)));
+        // Detect if it's a phone number or email for auto-linking
+        if (decoded.includes('@')) {
+          el.innerHTML = `<a href="mailto:${decoded}">${decoded}</a>`;
+        } else if (/^\d{10}$/.test(decoded)) {
+          el.innerHTML = `<a href="tel:${decoded}">${decoded}</a>`;
+        } else {
+          el.textContent = decoded;
+        }
+      } catch (e) {
+        console.error('Failed to decode:', encoded);
+      }
+    });
+  });

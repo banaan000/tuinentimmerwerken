@@ -300,7 +300,17 @@ main {
 .highlight {
     color: green;
     font-weight: bold;
+    text-decoration: none;
 }
+
+.phone-link {
+    text-decoration: none;
+}
+
+.phone-link .highlight {
+    text-decoration: none;
+}
+
 
 .underline {
     width: 40px;
