@@ -600,7 +600,7 @@ main {
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 220px; /* Iets meer hoogte om overlap te voorkomen */
+    height: 300px; /* Iets meer hoogte om overlap te voorkomen */
 }
 
 .testimonial-box {
